@@ -15,6 +15,7 @@
 		7AB2C5141BAEE641000C9A4F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AB2C5121BAEE641000C9A4F /* LaunchScreen.xib */; };
 		7AB2C5201BAEE641000C9A4F /* GestureTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2C51F1BAEE641000C9A4F /* GestureTestTests.m */; };
 		7AB2C52C1BAEE6E9000C9A4F /* GestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2C52B1BAEE6E9000C9A4F /* GestureView.m */; };
+		7AE8EFA41BAF8AB7005CBE87 /* CustomerGestrue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE8EFA31BAF8AB7005CBE87 /* CustomerGestrue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		7AB2C51F1BAEE641000C9A4F /* GestureTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureTestTests.m; sourceTree = "<group>"; };
 		7AB2C52A1BAEE6E9000C9A4F /* GestureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureView.h; sourceTree = "<group>"; };
 		7AB2C52B1BAEE6E9000C9A4F /* GestureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureView.m; sourceTree = "<group>"; };
+		7AE8EFA21BAF8AB7005CBE87 /* CustomerGestrue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerGestrue.h; sourceTree = "<group>"; };
+		7AE8EFA31BAF8AB7005CBE87 /* CustomerGestrue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerGestrue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 		7AB2C5291BAEE6C0000C9A4F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7AE8EFA21BAF8AB7005CBE87 /* CustomerGestrue.h */,
+				7AE8EFA31BAF8AB7005CBE87 /* CustomerGestrue.m */,
 				7AB2C52A1BAEE6E9000C9A4F /* GestureView.h */,
 				7AB2C52B1BAEE6E9000C9A4F /* GestureView.m */,
 			);
@@ -235,6 +240,7 @@
 				7AB2C50C1BAEE641000C9A4F /* ViewController.m in Sources */,
 				7AB2C5091BAEE641000C9A4F /* AppDelegate.m in Sources */,
 				7AB2C52C1BAEE6E9000C9A4F /* GestureView.m in Sources */,
+				7AE8EFA41BAF8AB7005CBE87 /* CustomerGestrue.m in Sources */,
 				7AB2C5061BAEE641000C9A4F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +438,7 @@
 				7AB2C5251BAEE641000C9A4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7AB2C5261BAEE641000C9A4F /* Build configuration list for PBXNativeTarget "GestureTestTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +447,7 @@
 				7AB2C5281BAEE641000C9A4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
