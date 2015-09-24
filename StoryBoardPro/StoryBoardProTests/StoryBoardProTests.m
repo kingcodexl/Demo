@@ -1,19 +1,19 @@
 //
-//  HavafunTests.m
-//  HavafunTests
+//  StoryBoardProTests.m
+//  StoryBoardProTests
 //
-//  Created by kingcodexl on 15/9/1.
-//  Copyright (c) 2015年 kingcodexl. All rights reserved.
+//  Created by hundsun on 15/9/23.
+//  Copyright (c) 2015年 hundsun. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface HavafunTests : XCTestCase
+@interface StoryBoardProTests : XCTestCase
 
 @end
 
-@implementation HavafunTests
+@implementation StoryBoardProTests
 
 - (void)setUp {
     [super setUp];

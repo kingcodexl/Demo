@@ -13,7 +13,6 @@
 		9645EB031B95C44E006DD057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9645EB011B95C44E006DD057 /* Main.storyboard */; };
 		9645EB051B95C44E006DD057 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9645EB041B95C44E006DD057 /* Images.xcassets */; };
 		9645EB081B95C44E006DD057 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9645EB061B95C44E006DD057 /* LaunchScreen.xib */; };
-		9645EB141B95C44E006DD057 /* HavafunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9645EB131B95C44E006DD057 /* HavafunTests.m */; };
 		9645EB2C1B95C793006DD057 /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9645EB2B1B95C793006DD057 /* UIView+Helper.m */; };
 		9645EB301B95C951006DD057 /* XlTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9645EB2F1B95C951006DD057 /* XlTabBar.m */; };
 		9645EB3F1B95D0E7006DD057 /* XlDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9645EB3E1B95D0E7006DD057 /* XlDataService.m */; };
@@ -65,16 +64,6 @@
 		9645EBD71B95DCFA006DD057 /* XlLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 9645EBD51B95DCFA006DD057 /* XlLable.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		9645EB0E1B95C44E006DD057 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9645EAEC1B95C44E006DD057 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9645EAF31B95C44E006DD057;
-			remoteInfo = Havafun;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		9645EAF41B95C44E006DD057 /* Havafun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Havafun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9645EAF81B95C44E006DD057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,9 +75,6 @@
 		9645EB021B95C44E006DD057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9645EB041B95C44E006DD057 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9645EB071B95C44E006DD057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		9645EB0D1B95C44E006DD057 /* HavafunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HavafunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9645EB121B95C44E006DD057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9645EB131B95C44E006DD057 /* HavafunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HavafunTests.m; sourceTree = "<group>"; };
 		9645EB2A1B95C793006DD057 /* UIView+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Helper.h"; path = "Tool/Category/UIView+Helper.h"; sourceTree = "<group>"; };
 		9645EB2B1B95C793006DD057 /* UIView+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Helper.m"; path = "Tool/Category/UIView+Helper.m"; sourceTree = "<group>"; };
 		9645EB2E1B95C951006DD057 /* XlTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XlTabBar.h; path = Main/View/XlTabBar.h; sourceTree = "<group>"; };
@@ -201,13 +187,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9645EB0A1B95C44E006DD057 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -215,7 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				9645EAF61B95C44E006DD057 /* Havafun */,
-				9645EB101B95C44E006DD057 /* HavafunTests */,
 				9645EAF51B95C44E006DD057 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -224,7 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				9645EAF41B95C44E006DD057 /* Havafun.app */,
-				9645EB0D1B95C44E006DD057 /* HavafunTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -254,23 +231,6 @@
 				9645EAF81B95C44E006DD057 /* Info.plist */,
 				9645EAF91B95C44E006DD057 /* main.m */,
 				9645EB371B95CB39006DD057 /* Havafun.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9645EB101B95C44E006DD057 /* HavafunTests */ = {
-			isa = PBXGroup;
-			children = (
-				9645EB131B95C44E006DD057 /* HavafunTests.m */,
-				9645EB111B95C44E006DD057 /* Supporting Files */,
-			);
-			path = HavafunTests;
-			sourceTree = "<group>";
-		};
-		9645EB111B95C44E006DD057 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9645EB121B95C44E006DD057 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -550,24 +510,6 @@
 			productReference = 9645EAF41B95C44E006DD057 /* Havafun.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9645EB0C1B95C44E006DD057 /* HavafunTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9645EB1A1B95C44E006DD057 /* Build configuration list for PBXNativeTarget "HavafunTests" */;
-			buildPhases = (
-				9645EB091B95C44E006DD057 /* Sources */,
-				9645EB0A1B95C44E006DD057 /* Frameworks */,
-				9645EB0B1B95C44E006DD057 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9645EB0F1B95C44E006DD057 /* PBXTargetDependency */,
-			);
-			name = HavafunTests;
-			productName = HavafunTests;
-			productReference = 9645EB0D1B95C44E006DD057 /* HavafunTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -579,10 +521,6 @@
 				TargetAttributes = {
 					9645EAF31B95C44E006DD057 = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					9645EB0C1B95C44E006DD057 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 9645EAF31B95C44E006DD057;
 					};
 				};
 			};
@@ -600,7 +538,6 @@
 			projectRoot = "";
 			targets = (
 				9645EAF31B95C44E006DD057 /* Havafun */,
-				9645EB0C1B95C44E006DD057 /* HavafunTests */,
 			);
 		};
 /* End PBXProject section */
@@ -614,13 +551,6 @@
 				9645EB081B95C44E006DD057 /* LaunchScreen.xib in Resources */,
 				9645EBAE1B95D0F8006DD057 /* MJRefresh.bundle in Resources */,
 				9645EB051B95C44E006DD057 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9645EB0B1B95C44E006DD057 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,23 +615,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9645EB091B95C44E006DD057 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9645EB141B95C44E006DD057 /* HavafunTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9645EB0F1B95C44E006DD057 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9645EAF31B95C44E006DD057 /* Havafun */;
-			targetProxy = 9645EB0E1B95C44E006DD057 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9645EB011B95C44E006DD057 /* Main.storyboard */ = {
@@ -829,40 +743,6 @@
 			};
 			name = Release;
 		};
-		9645EB1B1B95C44E006DD057 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = HavafunTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Havafun.app/Havafun";
-			};
-			name = Debug;
-		};
-		9645EB1C1B95C44E006DD057 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = HavafunTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Havafun.app/Havafun";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -880,15 +760,6 @@
 			buildConfigurations = (
 				9645EB181B95C44E006DD057 /* Debug */,
 				9645EB191B95C44E006DD057 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9645EB1A1B95C44E006DD057 /* Build configuration list for PBXNativeTarget "HavafunTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9645EB1B1B95C44E006DD057 /* Debug */,
-				9645EB1C1B95C44E006DD057 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
