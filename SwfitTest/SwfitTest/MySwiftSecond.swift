@@ -8,7 +8,122 @@
 
 import Foundation
 
+
+// 函数
+
+// 函数嵌套
+func chosseSetp(backWard:Bool)->(Int)->Int{
+    func setpForward(input:Int)->Int{
+        return input + 1
+    }
+    func setpBack(input:Int)->Int{
+        return input - 1
+    }
+    // 这里注意严格的空格
+    return backWard ? setpForward:setpBack
+}
+
+// 函数的类型 (Int,Int)->Int
+func addTwo(a:Int,b:Int)->Int{
+    return a + b
+}
+func mutpleTwo(a:Int,b:Int)->Int{
+    return a * b
+}
+func funcTypeTest(){
+    var fadd:(Int,Int)->Int = addTwo
+    var fmutple:(Int,Int)->Int = mutpleTwo
+    var addresult = fadd(3,3)
+    var mutpleresult = fmutple(3,3)
+    
+    //printMathResult(3, 3, fadd(3,3)
+    printMathResult(3, 3, fadd)
+}
+
+func printMathResult(a:Int,b:Int,fadd:(Int,Int)->Int)->Int{
+     return fadd(3,3)
+}
+// 输入输出参数
+// 输入输出参数相当于直接操作实参 swap1(&x, &y),用的地址
+func swap1(inout a:Int,inout b:Int){
+    let t = a
+    a = b
+    b = t
+
+}
+
+
+// 参数传尽量就是常量了,变量参数用var
+func fa(testx x:Int){
+    var x = 1
+    var y = 2
+    swap1(&x, &y)
+   // x++
+}
+
+func fa1(var testx x:Int){
+    x++
+}
+
+
+//默认值
+//带默认值的参数名自动是外部名
+func getString(a:[Int],b:String = "",f:Bool = false)->String{
+    return ""
+}
+
+//  内部明，外部名一样的情况
+func sayHi(#usermm:String,#age:Int){
+    // 居然是常量
+//    usermm = "wang"
+    getString([3,3])
+    getString([2,3], b: "", f: true)
+}
+// username 外部名 name 内部名 外部名提高程序的可读性，
+func sayHello(username name:String){
+    sayHi(usermm:"", age:3)
+}
+
+
+// 返回多个参数，其实就是元组
+func count(mystring:String)->(rstring1:String,rstring2:String){
+    sayHello(username: "wang")
+    return (mystring,mystring)
+}
+// 注意返回空 V是大写
+func sayHellop(name:String,otherName:String)->Void{
+    println("\(name) \(otherName)")
+}
+func sayHello(){
+    sayHellop("wan", "li")
+    println("hello")
+}
+
+func sayHello(name:String)->String{
+    return "hello \(name)"
+}
 func AFuncYuanzu(){
+    var name:String = sayHello("wangxiaolong")
+    sayHello()
+    var genres:Set = ["wang","xiao","long"]
+    var genres1:Set = ["yao","chun","ping"]
+    for temp  in genres{
+        // 变量
+    }
+    // 并集
+    var bingji = sorted(genres.union(genres1))
+    var jiaoji  = genres.intersect(genres1)
+    // 去掉交际，剩下，genres的
+    var quchujiaoji = genres.subtract(genres1)
+    var qudiaojiaoji = genres.exclusiveOr(genres1)
+    var issub = genres.isSubsetOf(genres1)
+    
+    var buxiangjiaojihe = genres.isDisjointWith(genres1)
+    
+    
+    
+    
+    
     // 集合类型，无需
     // 需要有初始值
     var Aset = Set("dd")
