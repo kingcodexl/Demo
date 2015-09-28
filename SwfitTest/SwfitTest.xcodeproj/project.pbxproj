@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E056081C1BB60FF0007F9A9B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E056081B1BB60FF0007F9A9B /* main.swift */; };
 		E05608231BB61010007F9A9B /* MySwfit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05608221BB61010007F9A9B /* MySwfit.swift */; };
+		E06C95A81BB8F555009E2E29 /* MySwiftFourth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06C95A71BB8F555009E2E29 /* MySwiftFourth.swift */; };
 		E0729A621BB7BA3D0045067B /* MySwiftSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0729A611BB7BA3D0045067B /* MySwiftSecond.swift */; };
 		E08477D31BB89A5F007194E5 /* MySwiftThird.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08477D21BB89A5F007194E5 /* MySwiftThird.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 		E05608181BB60FF0007F9A9B /* SwfitTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwfitTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E056081B1BB60FF0007F9A9B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E05608221BB61010007F9A9B /* MySwfit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySwfit.swift; sourceTree = "<group>"; };
+		E06C95A71BB8F555009E2E29 /* MySwiftFourth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySwiftFourth.swift; sourceTree = "<group>"; };
 		E0729A611BB7BA3D0045067B /* MySwiftSecond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySwiftSecond.swift; sourceTree = "<group>"; };
 		E08477D21BB89A5F007194E5 /* MySwiftThird.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySwiftThird.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +69,7 @@
 				E05608221BB61010007F9A9B /* MySwfit.swift */,
 				E0729A611BB7BA3D0045067B /* MySwiftSecond.swift */,
 				E08477D21BB89A5F007194E5 /* MySwiftThird.swift */,
+				E06C95A71BB8F555009E2E29 /* MySwiftFourth.swift */,
 			);
 			path = SwfitTest;
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 				E05608231BB61010007F9A9B /* MySwfit.swift in Sources */,
 				E0729A621BB7BA3D0045067B /* MySwiftSecond.swift in Sources */,
 				E08477D31BB89A5F007194E5 /* MySwiftThird.swift in Sources */,
+				E06C95A81BB8F555009E2E29 /* MySwiftFourth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

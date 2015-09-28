@@ -7,6 +7,282 @@
 //
 
 import Foundation
+/*
+9.结构体的构造器代理Initializer Delegation
+
+构造器代理：
+
+在构造器中调用另外一个构造器来完成初始化工作
+
+为了方便构造实例
+*/
+
+// 构造器
+/**
+/*语法：
+
+1.当创建一个实例时，实例的构造器一定会被调用
+
+2.一个类型中至少会有一个构造器，如果没有，编译器会帮我们自动生成一个
+
+3.构造器方法中的每一个参数名都默认为既是内部名，也是外部名
+
+4. 一个类型的构造器可以有多个,多个构造器之间形成重载(overload)关系
+
+5. 构造器是自动调用的,不允许程序员主动调用
+
+*/
+
+*/
+class Teacher {
+    // 类中的属性要么是饿可选择
+    var name:String?
+    // 要么是默认值
+    var age = 2
+    var isman:Bool = true
+    // 要么再init进行初始化
+    init(name:String,age:Int,isman:Bool){
+        self.name = name
+        self.age = age
+        self.isman = isman
+    }
+}
+func studentTest(){
+    var student = Student(name: "", age: 2)
+    var s = Student("",3)
+}
+struct Student {
+    var name:String?
+    var age:Int?
+    init(name:String,age:Int){
+        self.name = name
+        self.age = age
+    }
+    // _隐藏外部
+    init(_ name:String,_ age:Int){
+        self.name = name
+        self.age = age
+    }
+}
+/**
+
+将具体的实现隐藏起来，只给外界公开访问接口
+
+@interface Sample : NSObject
+
+@property(nonatomic, strong, readonly) NSString *name;
+
+@end
+
+
+
+@interface Sample ()
+
+//在.m中，将属性name重新声明为可读可写
+
+@property(nonatomic, strong, readwrite) NSString *name;
+
+@end
+
+*/
+
+// 继承重写
+/**
+子类(Sub class)  父类(Super class)  基类(Base class)
+
+Swift中，继承是单继承的。但是,Swift中的类并不一定非得有父类。Swift没有类似NSObject的根类，没有父类的类叫基类。
+*/
+class A{
+    // 存储属性
+    var name = ""
+    // 计算属性
+    var age:String{
+        return ""
+    }
+    
+     func A(){
+        
+    }
+}
+class B:A {
+    // 方法覆盖
+    override func A(){
+        
+    }
+    // 存储属性不能重写
+   // override var name = "dd"
+    // 重写计算属性
+    override var age:String{
+    return "edd"
+    }
+    
+    // 结合继承给存储属性添加监视器，必须加上overide
+    override var name:String{
+        willSet{
+            
+        }
+        didSet{
+            
+        }
+    }
+    
+}
+func jichengtest(){
+    var jia:A = B()
+    // 存储属性不能重写
+    
+
+}
+// 私有，公有类不能写在方法里
+private class pricateclass{
+    
+}
+
+public class publicclass{
+    // 再任何位置都可以访问，
+    public var propA:Int = 0
+    // 再本模块，本项目内部访问缺省internal
+    var propB:Int = 0
+    // 私有属性，只能再本类中访问
+    private  var propC:Int = 0
+    
+    public func MethodA(){
+        
+    }
+    private func MehtodB(){
+        
+    }
+    //新语法：
+    
+    //属性count的set是私有的，而get是公开的（这个属性只有我自己能改，但大家不能修改，只可读）
+    
+    public private(set) var count : Int = 0
+}
+
+func fangwenkongzhi(){
+    // 私有类
+        // 公有类
+   
+}
+
+func juzheng(){
+    struct Metrix{
+        var grid:[Double]
+        let rows:Int
+        let cols:Int
+        // 初始化方法
+        init(rows:Int,cols:Int){
+            self.rows = rows
+            self.cols = cols
+            self.grid = Array<Double>(count: rows * cols, repeatedValue:0.0)
+        }
+        subscript(row:Int,col:Int)->Double{
+            set{
+                //assert(true, "")
+                grid[rows * cols + cols] = newValue
+            }
+            get{
+                return grid[rows * cols + cols]
+            }
+        
+        }
+    }
+    var m = Metrix(rows: 3, cols: 3)
+    m[0,2] = 39
+    m[0,1] = 33
+    
+}
+
+
+func SubscriptyTest(){
+// 下标运算
+class MyArray{
+    var array = [Int]()
+    func add(x:Int){
+        array.append(x)
+    }
+    var size:Int{
+        return array.count
+    }
+    // 类就支持下标运算了
+    subscript(index:Int)->Int{
+        get{
+            return array[index]
+        }
+        set{
+            array[index] = newValue
+        }
+    }
+}
+    var array = MyArray()
+    array.add(3)
+    array.size
+    array[3] = 3
+    array[1] = 1
+    
+}
+func StructTest(){
+    struct Point{
+        var x = 0.0,y = 0.0
+        //struct中的方法默认为只读方法，只能读取当前实例的属性的值，不能修改属性的值
+        
+        //但是，如果方法前加了关键字mutating，那么方法就可以修改属性的值了,加了mutating method的方法就是变异方法
+        
+        // 变异方法 只用于值类型（struct,enum）
+        mutating func moveByX(_x:Double, y _y:Double) {
+            
+            x += _x
+            
+            y += _y
+            
+        }
+        static func TypeMethod(){
+            println("结构体静态方法")
+        }
+
+    }
+}
+
+// 方法
+class Counter{
+    var count = 0
+    var x = "",y = ""
+    func setX(x:String,y:String){
+        self.x = x
+        self.y = y
+    }
+    // 类方法 同OC+
+    class func functest() {
+        
+        println("leifangfa")
+    }
+    
+    // 实例方法可访问实例变量
+    func increment(){
+        count++
+    }
+    // #内部名
+    func incrementBy(#amount:Int){
+        count += amount
+    }
+    // 方法重载
+    func incrementBy(amout:Int,numberOfTimes:Int){
+        count += amout * numberOfTimes
+    }
+    func incrementyBy(testint amout:String,testint2 amount2:String){
+        x = amout
+        y = amount2
+    }
+}
+func classTest(){
+    var count = Counter()
+    count.increment()
+    count.incrementBy(amount: 2)
+    count.incrementBy(2, numberOfTimes: 4)
+    count.incrementyBy(testint: "", testint2: "")
+    
+}
+
 // 实例属性和类型属性,类结构体通用
 //不加static的是实例属性，加static的是类型属性。实例属性只能通过实例来访问，不能通过类型来访问。同样，类型属性只能通过类型来访问，不能通过实例来访问
 class testclass{
